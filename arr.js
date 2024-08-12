@@ -1,5 +1,5 @@
 
-let arr =JSON.parse( localStorage.getItem("arr"));
+let arr = JSON.parse(localStorage.getItem("arr")) ?? [];
 
 
 
@@ -17,7 +17,7 @@ let divB = document.getElementById("divB");
 
 
 function data() {
- divB.innerHTML="";
+    divB.innerHTML = "";
     for (let i = 0; i < arr.length; i++) {
         let div = document.createElement("div");
         let h1 = document.createElement("h1");
@@ -25,12 +25,12 @@ function data() {
         let but = document.createElement("button");
         but.addEventListener("click", function (event) {
             event.preventDefault();
-           
-            arr=arr.filter(function(value,index){
-                return index !==i;
+
+            arr = arr.filter(function (value, index) {
+                return index !== i;
             })
             data();
-            localStorage.setItem("arr",JSON.stringify(arr));
+            localStorage.setItem("arr", JSON.stringify(arr));
         })
         div.classList.add("div");
         but.classList.add("btun");
@@ -78,12 +78,12 @@ addbtn.addEventListener("click", function (event) {
         hed: inpt.value,
         para: texta.value,
     }
- 
-    
+
+
 
     arr.push(name);
     data();
-   localStorage.setItem("arr",JSON.stringify(arr));
+    localStorage.setItem("arr", JSON.stringify(arr));
 
     inptdiv.style.display = "none";
     bg.style.display = "none";
