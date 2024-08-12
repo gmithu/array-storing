@@ -12,7 +12,7 @@ body {
     justify-content: first baseline;
     align-items: center;
     border-bottom: 4px solid rgb(0, 0, 0);
-    
+
 }
 
 .btn {
@@ -25,9 +25,10 @@ body {
     font-size: xx-large;
     color: rgb(217, 17, 17);
     position: absolute;
-    top: 500px;
-    left: 900px;
-
+    top: 100px;
+    left: 0px;
+    margin: none;
+    padding: 0;
 }
 
 .allcon {
@@ -36,7 +37,7 @@ body {
     flex-direction: column;
     gap: 100px;
     background-color: rgb(192, 191, 191);
-   
+
 
 
 
@@ -131,7 +132,7 @@ textarea::placeholder {
     flex-direction: column;
     align-items: center;
     overflow: auto;
-    
+
 
 
 }
@@ -146,10 +147,10 @@ textarea::placeholder {
 }
 
 .btun {
-    width:100px;
-    height:30px;
-   background-color: rgb(71, 69, 69);
-    border:none;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(71, 69, 69);
+    border: none;
     border-radius: 9px;
     color: white;
 }
